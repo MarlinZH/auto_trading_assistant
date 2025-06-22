@@ -1,4 +1,3 @@
-
 # Robinhood_Crypto
 
 This project provides tools for managing and automating cryptocurrency trading and portfolio tracking using Robinhood, Binance, and Notion.
