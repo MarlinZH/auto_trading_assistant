@@ -1,11 +1,17 @@
 import robin_stocks.robinhood as r
 from notion_client import Client
-import os
 from datetime import datetime
+import os
+from dotenv import load_dotenv
+
+load_dotenv()  # Loads variables from .env
+
+username = os.getenv("ROBINHOOD_USERNAME")
+password = os.getenv("ROBINHOOD_PASSWORD")
 
 # Robinhood login
-login = r.login('marlin.z.hicks@gmail.com',
-                'Sequoia328')
+login = r.login('username',
+                'password')
 
 # Initialize Notion client
 notion = Client(auth=os.environ.get("NOTION_API_KEY"))
