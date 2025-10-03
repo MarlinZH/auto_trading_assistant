@@ -1,6 +1,7 @@
 import robin_stocks.robinhood as r
 from binance.client import Client
 import time
+import pandas
 
 # Robinhood login
 r.login('your_robinhood_username', 'your_robinhood_password')
