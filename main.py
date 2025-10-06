@@ -3,6 +3,7 @@ from notion_client import Client
 from datetime import datetime
 import os
 from dotenv import load_dotenv
+import pandas
 
 load_dotenv()  # Loads variables from .env
 
