@@ -1,0 +1,16 @@
+# Core dependencies
+robin-stocks==2.1.0
+notion-client==2.2.1
+python-dotenv==1.0.0
+pandas==2.0.3
+
+# Additional dependencies for all features
+python-binance==1.0.19
+streamlit==1.28.0
+pytesseract==0.3.10
+opencv-python==4.8.1.78
+Pillow==10.1.0
+
+# Security and logging
+cryptography==41.0.7
+requests==2.31.0
