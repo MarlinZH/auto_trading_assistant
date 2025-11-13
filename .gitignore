@@ -1,9 +1,3 @@
-# Environment variables
-.env
-*.env
-!.env.example
-python-dotenv.env
-
 # Python
 __pycache__/
 *.py[cod]
@@ -31,11 +25,18 @@ PIPFILE.lock
 
 # Virtual Environment
 venv/
-ENV/
 env/
-.venv
+ENV/
+env.bak/
+venv.bak/
 
-# IDE
+# Environment Variables
+.env
+.env.local
+.env.*.local
+python-dotenv.env
+
+# IDEs
 .vscode/
 .idea/
 *.swp
@@ -43,24 +44,61 @@ env/
 *~
 .DS_Store
 
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyCharm
+.idea/
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+*.cover
+*.py,cover
+.hypothesis/
+
 # Logs
 *.log
 logs/
+trading_bot.log*
 
 # Database
 *.db
 *.sqlite
 *.sqlite3
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# Backups
+*.bak
+*.backup
 
-# Trading data
-watchlist.csv
-trades.csv
-*.csv
+# OS
+.DS_Store
+Thumbs.db
 
-# Credentials (extra safety)
+# Credentials and sensitive data
 credentials.json
-config.json
 secrets.json
+api_keys.txt
+*.pem
+*.key
+
+# Portfolio snapshots
+screenshots/
+snapshots/
+portfolio_*.png
+
+# Old/deprecated files
+*_old.py
+*_deprecated.py
+auto_trade.py
+main.py
+requirements_updated.txt
+
+# Temporary files
+*.tmp
+temp/
+tmp/
