@@ -1,0 +1,52 @@
+# Phase 3: Infrastructure Requirements
+
+# Core Trading Dependencies
+robin-stocks==2.1.0
+python-binance==1.0.19
+
+# Data & Analysis
+pandas==2.0.3
+numpy==1.24.3
+
+# Notion Integration
+notion-client==2.2.1
+
+# Configuration
+python-dotenv==1.0.0
+
+# Database
+SQLAlchemy==2.0.23
+alembic==1.13.0
+
+# API
+Flask==3.0.0
+Flask-CORS==4.0.0
+gunicorn==21.2.0
+
+# Security
+cryptography==41.0.7
+
+# HTTP Requests
+requests==2.31.0
+
+# Image Processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+pytesseract==0.3.10
+
+# Testing
+pytest==7.4.3
+pytest-cov==4.1.0
+pytest-mock==3.12.0
+
+# Code Quality
+black==23.12.0
+flake8==6.1.0
+mypy==1.7.1
+
+# Utilities
+colorama==0.4.6
+tqdm==4.66.1
+
+# Scheduling (for daily summaries)
+schedule==1.2.0
