@@ -6,12 +6,12 @@ This branch contains critical security fixes for the auto_trading_assistant. **D
 
 ### What Was Fixed
 
-#### 1. **Hardcoded Credentials (CRITICAL)**
+### 1. **Hardcoded Credentials (CRITICAL)**
 - **Before**: Credentials were hardcoded directly in Python files
 - **After**: All credentials now loaded from `.env` file
 - **Impact**: Prevents credential exposure in version control
 
-#### 2. **Broken Environment Variable Loading**
+### 2. **Broken Environment Variable Loading**
 - **Before**: Variables were loaded but never used (strings 'username' instead of variable)
 - **After**: Proper variable usage with validation
 - **Impact**: Credentials now actually work from environment
